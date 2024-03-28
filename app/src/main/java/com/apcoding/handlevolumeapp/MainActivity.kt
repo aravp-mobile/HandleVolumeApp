@@ -59,6 +59,7 @@ class MainActivity : AppCompatActivity() {
         player?.prepare()
         player?.playWhenReady = true
 
+        // Error log listener
         player?.addListener(object : Player.Listener {
             override fun onPlayerError(error: PlaybackException) {
                 super.onPlayerError(error)
